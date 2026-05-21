@@ -4,7 +4,7 @@ import UseRef from './components/UseRef'
 import { ThemeContext } from './components/ThemeContext'
 
 const App = () => {
-  const {theme,toggleTheme}=useContext(ThemeContext)
+  const {theme,toggleTheme}=useContext()
 
   return (
     <div>
