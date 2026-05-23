@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import Courses from "./pages/Courses"
 import SavedCourses from "./pages/SavedCourses"
 import About from "./pages/About"
+import NotFound from "./pages/NotFound"
+import CoursesDetails from './pages/CoursesDetails'
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
@@ -15,6 +17,8 @@ const App = () => {
          <Route path="/courses" element={<Courses/>}/>
          <Route path='/savedCourses' element={<SavedCourses/>}/>
          <Route path='/about' element={<About/>}/>
+         <Route path='/coursesDetails/:courseId' element={<CoursesDetails/>}/>
+         <Route path='*' element={<NotFound/>}/>
         </Routes>
      
      
